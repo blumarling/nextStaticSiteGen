@@ -7,18 +7,26 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && prettier --write -l 'out/**/*.html' "
+    "export": "next build && next export && prettier --write -l 'out/**/*.html' ",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
     "next": "^8.1.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "@babel/core": "^7.4.5",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
     "prettier": "1.18.2"
   }
 }
